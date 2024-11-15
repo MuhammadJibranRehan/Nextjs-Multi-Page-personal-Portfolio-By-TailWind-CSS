@@ -1,0 +1,131 @@
+/* Large Tablets (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .heading {
+      font-size: 1.875rem;
+    }
+  
+    .form {
+      gap: 14px;
+    }
+  
+    .input,
+    .textarea {
+      font-size: 1rem;
+      padding: 9px;
+    }
+  
+    .submitButton {
+      padding: 9px 14px;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Medium devices (max-width: 992px) */
+  @media (max-width: 992px) {
+    .container {
+      padding: 18px;
+    }
+  
+    .heading {
+      font-size: 1.75rem;
+    }
+  
+    .form {
+      gap: 12px;
+    }
+  
+    .input,
+    .textarea {
+      font-size: 0.95rem;
+      padding: 8px;
+    }
+  
+    .submitButton {
+      padding: 8px 12px;
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Small devices (max-width: 640px) */
+  @media (max-width: 640px) {
+    .container {
+      padding: 12px;
+    }
+  
+    .heading {
+      font-size: 1.5rem;
+    }
+  
+    .form {
+      gap: 10px;
+    }
+  
+    .input,
+    .textarea {
+      font-size: 0.9rem;
+      padding: 7px;
+    }
+  
+    .submitButton {
+      padding: 7px 10px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Large mobile devices (max-width: 600px) */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .heading {
+      font-size: 1.375rem;
+    }
+  
+    .form {
+      gap: 9px;
+    }
+  
+    .input,
+    .textarea {
+      font-size: 0.875rem;
+      padding: 6px;
+    }
+  
+    .submitButton {
+      padding: 6px 9px;
+      font-size: 0.875rem;
+    }
+  }
+  
+  /* Extra large screens (min-width: 1440px) */
+  @media (min-width: 1440px) {
+    .container {
+      max-width: 800px;
+      padding: 25px;
+    }
+  
+    .heading {
+      font-size: 2.25rem;
+    }
+  
+    .form {
+      gap: 18px;
+    }
+  
+    .input,
+    .textarea {
+      font-size: 1.1rem;
+      padding: 11px;
+    }
+  
+    .submitButton {
+      padding: 12px 16px;
+      font-size: 1.1rem;
+    }
+  }
+  

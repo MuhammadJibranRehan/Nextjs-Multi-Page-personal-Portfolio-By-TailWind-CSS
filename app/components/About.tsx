@@ -1,4 +1,4 @@
-"use client"; // <-- This line marks the component as client-side
+"use client";
 
 import React, { useTransition, useState } from "react";
 import TabButton from "./TabButton";

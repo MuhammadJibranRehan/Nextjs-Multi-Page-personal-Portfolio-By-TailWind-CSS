@@ -1,0 +1,241 @@
+/* Default styles for larger screens */
+#mainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#MainTxt {
+  max-width: 50%;
+  margin-bottom: 20px;
+}
+
+#MainImg img {
+  width: 60%;
+  height: auto;
+}
+
+/* Small devices (<= 640px) */
+@media (max-width: 640px) {
+  #mainContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #MainTxt {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  #MainImg img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* Medium devices (>= 641px and <= 768px) */
+@media (min-width: 641px) and (max-width: 768px) {
+  #mainContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #MainTxt {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+
+  #MainImg img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* Tablets & larger devices (>= 769px and <= 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #mainContainer {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  #MainTxt {
+    max-width: 60%;
+    margin-bottom: 20px;
+  }
+
+  #MainImg img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+/* Larger tablets and small desktops (>= 1025px and <= 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #mainContainer {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  #MainTxt {
+    max-width: 50%;
+    margin-bottom: 20px;
+  }
+
+  #MainImg img {
+    width: 65%;
+    height: auto;
+  }
+}
+
+/* Desktop (>= 1281px) */
+@media (min-width: 1281px) {
+  #mainContainer {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  #MainTxt {
+    max-width: 40%;
+    margin-bottom: 30px;
+  }
+
+  #MainImg img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+/* Very large screens (>= 1600px) */
+@media (min-width: 1600px) {
+  #mainContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  #MainTxt {
+    max-width: 35%;
+    margin-bottom: 40px;
+  }
+
+  #MainImg img {
+    width: 55%;
+    height: auto;
+  }
+}
+
+/* Ultra-wide screens (>= 1920px) */
+@media (min-width: 1920px) {
+  #mainContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  #MainTxt {
+    max-width: 30%;
+    margin-bottom: 50px;
+  }
+
+  #MainImg img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+/* Extra small screens (<= 480px) */
+@media (max-width: 480px) {
+  #mainContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #MainTxt {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #MainImg img {
+    width: 85%;
+    height: auto;
+  }
+}
+
+/* Ultra-small screens (<= 360px) */
+@media (max-width: 360px) {
+  #mainContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #MainTxt {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #MainImg img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* Large tablets and small laptops (>= 1025px and <= 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  #mainContainer {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  #MainTxt {
+    max-width: 55%;
+    margin-bottom: 30px;
+  }
+
+  #MainImg img {
+    width: 65%;
+    height: auto;
+  }
+}
+
+/* Large laptops & small desktops (>= 1367px and <= 1600px) */
+@media (min-width: 1367px) and (max-width: 1600px) {
+  #mainContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  #MainTxt {
+    max-width: 40%;
+    margin-bottom: 40px;
+  }
+
+  #MainImg img {
+    width: 60%;
+    height: auto;
+  }
+}
+
+/* Small laptops & larger desktops (>= 1440px and <= 1920px) */
+@media (min-width: 1440px) and (max-width: 1920px) {
+  #mainContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  #MainTxt {
+    max-width: 35%;
+    margin-bottom: 50px;
+  }
+
+  #MainImg img {
+    width: 55%;
+    height: auto;
+  }
+}

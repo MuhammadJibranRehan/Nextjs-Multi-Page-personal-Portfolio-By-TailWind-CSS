@@ -1,18 +1,18 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import "./Main.styles.css"
+import "./For-Responsiveness.css"
 import HeroImage from "../images/hero-image.png"
 
 export default function Main() {
   return (
     <div>
-      <div id="mainContainer">
-        <div id="MainTxt">
-          I&apos;m a<span id="span1"> Web Developer</span>,
-          <span id="span2"> Graphic Design</span>
-          <span id="span3">|</span>...
-          <p id="para1">
+      <div className="flex justify-between items-center p-5">
+        <div className="flex-1 text-2xl text-white pr-5">
+          I&apos;m a<span className="text-[#4caf50] font-bold"> Web Developer</span>,
+          <span className="text-[#ff6347] font-bold"> Graphic Design</span>
+          <span className="m-x-2 text-[#888]">|</span>...
+          <p className="text-[1.1rem] leading-[1.6] text-[#444] mt-5 italic">
             &quot;Crafting seamless, user-centered experiences with every line of
             code.&quot; &quot;Turning ideas into interactive, responsive web designs that
             engage and delight.&quot; &quot;Building the web with clean, scalable code and
@@ -21,7 +21,7 @@ export default function Main() {
             blend functionality with design.&quot;
           </p>
         </div>
-        <div id="MainImg">
+        <div className="flex flex-1 justify-end">
           <Image
             src={HeroImage}
             alt="Coding Boy Image"
@@ -33,107 +33,118 @@ export default function Main() {
       <div>
         <br />
         <br />
-        <Link id="linkC" href="/pages/contact">
+        <Link className="bg-black text-red-500 mr-auto border-10 border-solid rounded-[9px]" href="/pages/contact">
           Contact-Us
         </Link>
       </div>
       <br />
       <br />
       <br />
-      <div className="skills-container">
-        <div className="skills-header">
-          <h1 className="skills-title">My Skills</h1>
-          <div className="divider"></div>
+      <div className="p-8">
+        <div className="text-center mb-8">
+          <h1 className="text-2xl font-bold text-gray-800">My Skills</h1>
+          <div className="w-[50px] h-[2px] bg-[#3498db] my-2 mx-auto"></div>
         </div>
-        <div className="skills-list">
-          {/* Skill 1: HTML */}
-          <div className="skill-item">
-            <div className="skill-icon html-icon">
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                strokeWidth="0"
-                viewBox="0 0 512 512"
-                className="icon"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M416 64H96c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zm4 348c0 4.4-3.6 8-8 8H100c-4.4 0-8-3.6-8-8V100c0-4.4 3.6-8 8-8h312c4.4 0 8 3.6 8 8v312z"></path>
-                <path d="M363.6 192.9L346 174.8c-.7-.8-1.8-1.2-2.8-1.2-1.1 0-2.1.4-2.8 1.2l-122 122.9-44.4-44.4c-.8-.8-1.8-1.2-2.8-1.2-1 0-2 .4-2.8 1.2l-17.8 17.8c-1.6 1.6-1.6 4.1 0 5.7l56 56c3.6 3.6 8 5.7 11.7 5.7 5.3 0 9.9-3.9 11.6-5.5h.1l133.7-134.4c1.4-1.7 1.4-4.2-.1-5.7z"></path>
-              </svg>
-            </div>
-            <div className="skill-info">
-              <h2 className="skill-title">HTML</h2>
-            </div>
-          </div>
+        <div className="flex flex-wrap justify-center">
+  {/* Skill 1: HTML */}
+  <div className="group">
+    <div className="bg-white p-4 m-4 w-[240px] rounded-lg shadow-md text-center transition-transform duration-300 ease-in-out group-hover:translate-y-[-10px]">
+      <div className="mb-4">
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          strokeWidth="0"
+          viewBox="0 0 512 512"
+          className="w-[50px] h-[50px] fill-[#ff493c]"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M416 64H96c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zm4 348c0 4.4-3.6 8-8 8H100c-4.4 0-8-3.6-8-8V100c0-4.4 3.6-8 8-8h312c4.4 0 8 3.6 8 8v312z"></path>
+          <path d="M363.6 192.9L346 174.8c-.7-.8-1.8-1.2-2.8-1.2-1.1 0-2.1.4-2.8 1.2l-122 122.9-44.4-44.4c-.8-.8-1.8-1.2-2.8-1.2-1 0-2 .4-2.8 1.2l-17.8 17.8c-1.6 1.6-1.6 4.1 0 5.7l56 56c3.6 3.6 8 5.7 11.7 5.7 5.3 0 9.9-3.9 11.6-5.5h.1l133.7-134.4c1.4-1.7 1.4-4.2-.1-5.7z"></path>
+        </svg>
+      </div>
+      <div className="pt-2">
+        <h2 className="text-[1.2rem] font-bold text-[#333]">HTML</h2>
+      </div>
+    </div>
+  </div>
 
-          {/* Skill 2: CSS */}
-          <div className="skill-item">
-            <div className="skill-icon css-icon">
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                strokeWidth="0"
-                viewBox="0 0 512 512"
-                className="icon"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M416 64H96c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zm4 348c0 4.4-3.6 8-8 8H100c-4.4 0-8-3.6-8-8V100c0-4.4 3.6-8 8-8h312c4.4 0 8 3.6 8 8v312z"></path>
-                <path d="M363.6 192.9L346 174.8c-.7-.8-1.8-1.2-2.8-1.2-1.1 0-2.1.4-2.8 1.2l-122 122.9-44.4-44.4c-.8-.8-1.8-1.2-2.8-1.2-1 0-2 .4-2.8 1.2l-17.8 17.8c-1.6 1.6-1.6 4.1 0 5.7l56 56c3.6 3.6 8 5.7 11.7 5.7 5.3 0 9.9-3.9 11.6-5.5h.1l133.7-134.4c1.4-1.7 1.4-4.2-.1-5.7z"></path>
-              </svg>
-            </div>
-            <div className="skill-info">
-              <h2 className="skill-title">CSS</h2>
-            </div>
-          </div>
+  {/* Skill 2: CSS */}
+  <div className="group">
+    <div className="bg-white p-4 m-4 w-[240px] rounded-lg shadow-md text-center transition-transform duration-300 ease-in-out group-hover:translate-y-[-10px]">
+      <div className="mb-4">
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          strokeWidth="0"
+          viewBox="0 0 512 512"
+          className="w-[50px] h-[50px] fill-[#5c6fed]"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M416 64H96c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zm4 348c0 4.4-3.6 8-8 8H100c-4.4 0-8-3.6-8-8V100c0-4.4 3.6-8 8-8h312c4.4 0 8 3.6 8 8v312z"></path>
+          <path d="M363.6 192.9L346 174.8c-.7-.8-1.8-1.2-2.8-1.2-1.1 0-2.1.4-2.8 1.2l-122 122.9-44.4-44.4c-.8-.8-1.8-1.2-2.8-1.2-1 0-2 .4-2.8 1.2l-17.8 17.8c-1.6 1.6-1.6 4.1 0 5.7l56 56c3.6 3.6 8 5.7 11.7 5.7 5.3 0 9.9-3.9 11.6-5.5h.1l133.7-134.4c1.4-1.7 1.4-4.2-.1-5.7z"></path>
+        </svg>
+      </div>
+      <div className="pt-2">
+        <h2 className="text-[1.2rem] font-bold text-[#333]">CSS</h2>
+      </div>
+    </div>
+  </div>
 
-          {/* Skill 3: JavaScript/TypeScript */}
-          <div className="skill-item">
-            <div className="skill-icon js-icon">
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                strokeWidth="0"
-                viewBox="0 0 512 512"
-                className="icon"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M416 64H96c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zm4 348c0 4.4-3.6 8-8 8H100c-4.4 0-8-3.6-8-8V100c0-4.4 3.6-8 8-8h312c4.4 0 8 3.6 8 8v312z"></path>
-                <path d="M363.6 192.9L346 174.8c-.7-.8-1.8-1.2-2.8-1.2-1.1 0-2.1.4-2.8 1.2l-122 122.9-44.4-44.4c-.8-.8-1.8-1.2-2.8-1.2-1 0-2 .4-2.8 1.2l-17.8 17.8c-1.6 1.6-1.6 4.1 0 5.7l56 56c3.6 3.6 8 5.7 11.7 5.7 5.3 0 9.9-3.9 11.6-5.5h.1l133.7-134.4c1.4-1.7 1.4-4.2-.1-5.7z"></path>
-              </svg>
-            </div>
-            <div className="skill-info">
-              <h2 className="skill-title">JavaScript/TypeScript</h2>
-            </div>
-          </div>
+  {/* Skill 3: JavaScript/TypeScript */}
+  <div className="group">
+    <div className="bg-white p-4 m-4 w-[240px] rounded-lg shadow-md text-center transition-transform duration-300 ease-in-out group-hover:translate-y-[-10px]">
+      <div className="mb-4">
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          strokeWidth="0"
+          viewBox="0 0 512 512"
+          className="w-[50px] h-[50px] fill-[#e3b726]"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M416 64H96c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zm4 348c0 4.4-3.6 8-8 8H100c-4.4 0-8-3.6-8-8V100c0-4.4 3.6-8 8-8h312c4.4 0 8 3.6 8 8v312z"></path>
+          <path d="M363.6 192.9L346 174.8c-.7-.8-1.8-1.2-2.8-1.2-1.1 0-2.1.4-2.8 1.2l-122 122.9-44.4-44.4c-.8-.8-1.8-1.2-2.8-1.2-1 0-2 .4-2.8 1.2l-17.8 17.8c-1.6 1.6-1.6 4.1 0 5.7l56 56c3.6 3.6 8 5.7 11.7 5.7 5.3 0 9.9-3.9 11.6-5.5h.1l133.7-134.4c1.4-1.7 1.4-4.2-.1-5.7z"></path>
+        </svg>
+      </div>
+      <div className="pt-2">
+        <h2 className="text-[1.2rem] font-bold text-[#333]">JavaScript/TypeScript</h2>
+      </div>
+    </div>
+  </div>
 
-          {/* Skill 4: Next.js */}
-          <div className="skill-item">
-            <div className="skill-icon nextjs-icon">
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                strokeWidth="0"
-                viewBox="0 0 512 512"
-                className="icon"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M416 64H96c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zm4 348c0 4.4-3.6 8-8 8H100c-4.4 0-8-3.6-8-8V100c0-4.4 3.6-8 8-8h312c4.4 0 8 3.6 8 8v312z"></path>
-                <path d="M363.6 192.9L346 174.8c-.7-.8-1.8-1.2-2.8-1.2-1.1 0-2.1.4-2.8 1.2l-122 122.9-44.4-44.4c-.8-.8-1.8-1.2-2.8-1.2-1 0-2 .4-2.8 1.2l-17.8 17.8c-1.6 1.6-1.6 4.1 0 5.7l56 56c3.6 3.6 8 5.7 11.7 5.7 5.3 0 9.9-3.9 11.6-5.5h.1l133.7-134.4c1.4-1.7 1.4-4.2-.1-5.7z"></path>
-              </svg>
-            </div>
-            <div className="skill-info">
-              <h2 className="skill-title">Next.js</h2>
-            </div>
-          </div>
-        </div>
+  {/* Skill 4: Next.js */}
+  <div className="group">
+    <div className="bg-white p-4 m-4 w-[240px] rounded-lg shadow-md text-center transition-transform duration-300 ease-in-out group-hover:translate-y-[-10px]">
+      <div className="mb-4">
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          strokeWidth="0"
+          viewBox="0 0 512 512"
+          className="w-[50px] h-[50px] fill-[#000000cc]"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M416 64H96c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zm4 348c0 4.4-3.6 8-8 8H100c-4.4 0-8-3.6-8-8V100c0-4.4 3.6-8 8-8h312c4.4 0 8 3.6 8 8v312z"></path>
+          <path d="M363.6 192.9L346 174.8c-.7-.8-1.8-1.2-2.8-1.2-1.1 0-2.1.4-2.8 1.2l-122 122.9-44.4-44.4c-.8-.8-1.8-1.2-2.8-1.2-1 0-2 .4-2.8 1.2l-17.8 17.8c-1.6 1.6-1.6 4.1 0 5.7l56 56c3.6 3.6 8 5.7 11.7 5.7 5.3 0 9.9-3.9 11.6-5.5h.1l133.7-134.4c1.4-1.7 1.4-4.2-.1-5.7z"></path>
+        </svg>
+      </div>
+      <div className="pt-2">
+        <h2 className="text-[1.2rem] font-bold text-[#333]">Next.js</h2>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
       <br />
       <br />
       <br />
-      <h1 className="skills-title" id="Pro">
+      <div className="p-8 text-center mb-8 ">
+      <h1 className="text-2xl font-bold text-gray-800">
         My Projects
+        <div className="w-[50px] h-[2px] bg-[#3498db] my-2 mx-auto"></div>
       </h1>
-      <div className="container">
+      </div>
+      <div className="p-8">
         <div className="lg:w-2/3 mx-auto">
           <div className="flex flex-wrap -mx-2">
             <div className="px-5 w-full sm:w-1/2 mb-6">
@@ -154,7 +165,7 @@ export default function Main() {
                   <p className="leading-relaxed text-black ">
                     Static Resume With Hide/Show Skill Toggle Button
                   </p>
-                  <a
+                  <Link
                     target="_blank"
                     href="https://hackathon-milestone-based-interactive-resume-builder-eta.vercel.app/"
                   >
@@ -172,7 +183,7 @@ export default function Main() {
                         <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
                       </svg>
                     </p>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -197,7 +208,7 @@ export default function Main() {
                     I built a Calculator using HTML, CSS, and
                     JavaScript/TypeScript.
                   </p>
-                  <a target="_blank" href="https://calculator-by-me.web.app/">
+                  <Link target="_blank" href="https://calculator-by-me.web.app/">
                     <p className="leading-relaxed text-blue-500 hover:underline mt-2 flex items-center justify-center">
                       View More
                       <svg
@@ -212,7 +223,7 @@ export default function Main() {
                         <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
                       </svg>
                     </p>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -236,7 +247,7 @@ export default function Main() {
                   <p className="leading-relaxed text-black">
                     I built a Personal Portfolio Website using Next.js
                   </p>
-                  <a
+                  <Link
                     target="_blank"
                     href="https://m-jibran-rehan-portfolio.web.app/"
                   >
@@ -254,15 +265,15 @@ export default function Main() {
                         <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
                       </svg>
                     </p>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="contact-container">
-        <div id="map-container">
+      <div className="flex gap-5 p-5 items-start">
+        <div className="flex-1 h-[600px] rounded-lg overflow-hidden shadow-md">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d904.8744723032006!2d67.16858015780836!3d24.880993134397695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339f2f880f029%3A0x2355614a1cac85c7!2sPunjab%20Town!5e0!3m2!1sen!2s!4v1731102934557!5m2!1sen!2s"
             width="100%"
@@ -274,13 +285,13 @@ export default function Main() {
           />
         </div>
 
-        <div id="form-container">
-          <h2>Contact Me</h2>
-          <p>Fill the form below to get in touch with me.</p>
+        <div className="flex-1 bg-white p-5 rounded-lg shadow-md">
+          <h2 className="text-[1.5rem] text-[#333] mb-5">Contact Me</h2>
+          <p className="font-light text-base">Fill the form below to get in touch with me.</p>
           <form action="https://formspree.io/f/xgvewzje" method="POST">
             <div>
-              <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" required />
+              <label htmlFor="name" className="block mb-1 text-[#666]">Name</label>
+              <input type="text" id="name" name="name" required className="w-full p-2 mb-3 border border-[#ddd] rounded-sm outline-none focus:border-[#0070f3]" />
             </div>
 
             <div>
@@ -295,10 +306,10 @@ export default function Main() {
 
             <div>
               <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
+              <textarea id="message" name="message" required className="w-full p-2 mb-3 border border-[#ddd] rounded-sm outline-none focus:border-[#0070f3]"></textarea>
             </div>
 
-            <button type="submit">Send Message</button>
+            <button type="submit" className="p-2.5 px-4 text-[1rem] text-white bg-[#28a745] border-0 rounded-sm cursor-pointer transition-colors duration-300 ease-in-out hover:bg-[#218838]">Send Message</button>
           </form>
         </div>
       </div>
