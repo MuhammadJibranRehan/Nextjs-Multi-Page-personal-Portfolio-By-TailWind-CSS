@@ -53,7 +53,7 @@ const TAB_DATA: TabData[] = [
   },
 ];
 
-const AboutSection: React.FC = () => {
+const AboutSection: React.FC = () => {  
   const [tab, setTab] = useState<string>("skills");
   const startTransition = useTransition()[1];
 
